@@ -2,21 +2,15 @@
 // components/SearchSection.js
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// images
 import searchAreaBackground from "../../../public/Images/searchAreaBackground.png";
 
 const SearchArea = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1200 });
-  }, []);
-
   return (
     <section
       className="relative overflow-hidden bg-cover bg-center py-32 lg:py-[218px] mb-16 lg:mb-[218px] flex items-center justify-center px-4 "
       style={{ backgroundImage: `url(${searchAreaBackground.src})` }}
-      id="contact"
+      id="guideline"
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 text-center text-white  mx-auto max-w-[1420px] ">

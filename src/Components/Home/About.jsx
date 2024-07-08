@@ -1,15 +1,9 @@
-"use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import ownerImage from "../../../public/Images/Owner.png"
+import React from "react";
+// images
+import ownerImage from "../../../public/Images/Owner.png";
 
 export default function About() {
-  useEffect(() => {
-    AOS.init({ duration: 1200 });
-  }, []);
-
   // Fun facts data
   let data = [
     { id: "1", count: "15", name: "Years Of Experience" },
@@ -20,8 +14,8 @@ export default function About() {
 
   return (
     <section
+      id="aboutme"
       className="max-w-[1420px] overflow-hidden mx-auto py-32 lg:py-[218px] px-4"
-      id="about"
     >
       {/* Header section */}
       <header className="text-center flex flex-col gap-y-3 md:gap-y-6 mb-20">
@@ -54,7 +48,7 @@ export default function About() {
           <Image
             height="624"
             width="527"
-            className="bg-[#E2E6EC] p-4"
+            className="bg-[#E2E6EC] p-4 w-full lg:w-auto"
             src={ownerImage}
             alt="Owner Image"
           />
@@ -83,7 +77,7 @@ export default function About() {
           <div data-aos="fade-up">
             <a
               href="#"
-              className="sm:w-auto rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white shadow transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:glass hover:bg-primary focus:outline-none focus:ring montserrat-font"
+              className="sm:w-auto rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white shadow transition-all duration-300 ease-in-out transform  hover:shadow-lg  focus:outline-none focus:ring montserrat-font"
               data-aos="fade-right"
               data-aos-duration="1200"
             >
@@ -104,7 +98,7 @@ export default function About() {
             data-aos-delay={index * 100} // Staggering delay
           >
             <h3
-              className="font-bold text-4xl md:text-5xl mb-3 playfair-display-font"
+              className="font-bold text-4xl md:text-5xl mb-3 montserrat-font"
               data-aos="zoom-in"
               data-aos-duration="1000"
               data-aos-delay={index * 100 + 200} // Staggering delay for the count

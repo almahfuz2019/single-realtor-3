@@ -1,9 +1,7 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
-import React, { useEffect, useState } from "react";
+/* eslint-disable react/no-unescaped-entities */
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function Contact() {
   const {
@@ -14,10 +12,6 @@ export default function Contact() {
   } = useForm();
   const [successMessage, setSuccessMessage] = useState("");
 
-  useEffect(() => {
-    AOS.init({ duration: 1200 });
-  }, []);
-
   const onSubmit = (data) => {
     console.log(data);
     setSuccessMessage("Your message has been sent successfully!");
@@ -27,7 +21,10 @@ export default function Contact() {
   return (
     <div>
       {/* Grid Header */}
-      <div className="grid grid-cols-2 justify-center mt-32 lg:mt-[218px] ">
+      <div
+        id="contact"
+        className="grid grid-cols-2 justify-center mt-32 lg:mt-[218px] "
+      >
         <div className="text-center bg-primary sm:text-2xl text-xl text-white md:text-3xl lg:text-5xl py-4 font-bold playfair-display-font">
           <p>Property Estimate</p>
         </div>
@@ -90,7 +87,6 @@ export default function Contact() {
                     {...register("phone", {
                       required: "Phone is required",
                       pattern: {
-                        value: /^[0-9]+$/,
                         message: "Invalid phone number",
                       },
                     })}
@@ -165,7 +161,7 @@ export default function Contact() {
               )}
               <button
                 type="submit"
-                className="w-full text-2xl font-medium mt-4 py-4 bg-[#cc6954] text-white rounded-lg"
+                className="w-full mt-4 rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white shadow transition-all duration-300 ease-in-out transform  hover:shadow-lg  focus:outline-none focus:ring montserrat-font"
               >
                 Send
               </button>

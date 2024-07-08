@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ImFacebook, ImTwitter } from "react-icons/im";
 import { FaInstagram } from "react-icons/fa";
 import React, { useEffect, useRef, useState } from "react";
+// images
 import logo from "../../../public/Images/logo.png";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); // State to manage menu open/close
@@ -24,7 +25,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="bg-white relative z-10 montserrat-font">
+    <div id="home" className="bg-white relative z-10 montserrat-font">
       <div className="navbar z-50 text-secondary max-w-[1420px] mx-auto pt-5 px-4">
         {/* Logo */}
         <div className="navbar-start">
@@ -46,7 +47,7 @@ export default function Navbar() {
               <li key={index}>
                 <a
                   href={`#${item.toLowerCase().replace(" ", "")}`}
-                  className="text-black hover:text-primary text-2xl font-medium"
+                  className="text-black hover:text-primary hover:bg-gray-100 text-2xl font-medium"
                 >
                   {item}
                 </a>
@@ -58,17 +59,32 @@ export default function Navbar() {
           {/* Social media icons for large screens */}
           <ul className="menu menu-horizontal px-1 hidden lg:flex">
             <li>
-              <a href="#" className="text-secondary text-xl">
+              <a
+                href="https://www.facebook.com/" // Replace with your actual Facebook profile URL
+                className="text-secondary text-xl hover:scale-110 hover:bg-none"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ImFacebook className="text-white bg-black h-[32px] p-1 rounded w-[32px]" />
               </a>
             </li>
             <li>
-              <a href="#" className="text-secondary text-xl">
+              <a
+                href="https://www.twitter.com/" // Replace with your actual Twitter profile URL
+                className="text-secondary text-xl hover:scale-110 hover:bg-none"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ImTwitter className="text-white bg-black h-[32px] p-1 rounded w-[32px]" />
               </a>
             </li>
             <li>
-              <a href="#" className="text-secondary text-xl">
+              <a
+                href="https://www.instagram.com/" // Replace with your actual Instagram profile URL
+                className="text-secondary text-xl hover:scale-110 hover:bg-none"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram className="text-white bg-black h-[32px] p-1 rounded w-[32px]" />
               </a>
             </li>

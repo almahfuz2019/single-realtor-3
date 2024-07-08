@@ -1,21 +1,11 @@
-"use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 import buyProperty from "/public/Images/buy-property.png";
 import calculation from "/public/Images/calculation.png";
 import homeEvaluation from "/public/Images/home-evaluation.png";
 import sellProperty from "/public/Images/sell-property.png";
 
 export default function Services() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-out",
-    });
-  }, []);
-
   // Services data
   const services = [
     {
@@ -49,7 +39,7 @@ export default function Services() {
   ];
 
   return (
-    <div className="bg-[#EAC9A833]">
+    <div id="services" className="bg-[#EAC9A833]">
       <section className="max-w-[1420px] overflow-hidden mx-auto py-32 lg:py-[218px] px-4">
         {/* Header section */}
         <header className="text-center flex flex-col gap-y-3 md:gap-y-6 mb-20">
@@ -80,7 +70,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={service.id}
-              className="flex flex-col justify-center items-center custom-shadow bg-primary py-10 px-2 rounded-lg transition-transform transform hover:scale-105 hover:shadow-2xl"
+              className="flex flex-col justify-center items-center custom-shadow bg-primary py-10 px-2 rounded-lg transition-transform transform hover:scale-110 hover:shadow-2xl"
               data-aos="fade-up"
               data-aos-duration="1200" // Duration of the animation for this element
               data-aos-delay={index * 100} // Staggered delay for each item
@@ -96,7 +86,7 @@ export default function Services() {
               </h3>
               <a
                 href="#"
-                className="text-[24px] font-normal text-white border border-white py-[8px] px-[21px] inline-block mx-auto mt-10 montserrat-font transition-colors hover:bg-white hover:text-primary"
+                className="text-[24px] font-normal text-white border border-white py-[8px] px-[21px] inline-block mx-auto mt-10 montserrat-font transition-colors hover:bg-white hover:text-primary cursor-not-allowed"
               >
                 {service.link}
               </a>

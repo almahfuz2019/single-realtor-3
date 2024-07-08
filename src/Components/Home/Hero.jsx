@@ -1,16 +1,10 @@
-"use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+// images
 import callIcon from "../../../public/Images/callIcon.png";
 import heroBG from "../../../public/Images/hero-background.png";
 
 export default function Hero() {
-  useEffect(() => {
-    AOS.init({ duration: 1200 });
-  }, []);
-
   return (
     <section className="relative lg:px-0 overflow-hidden">
       {/* Hero section background */}
@@ -25,7 +19,7 @@ export default function Hero() {
               className="sm:text-4xl text-3xl md:text-5xl md:leading-[55px] font-bold text-white playfair-display-font"
               data-aos="fade-up"
             >
-              Your Guide To Finding The Perfect Property
+              Your 15 Guide To Finding The Perfect Property
             </h1>
             <p
               data-aos="fade-up"
@@ -54,7 +48,7 @@ export default function Hero() {
                   height="24"
                   width="24"
                   alt="Call Icon"
-                  className="h-auto w-auto"
+                  className="md:h-auto md:w-auto h-4 w-4 "
                 />
                 Book A Call
               </a>

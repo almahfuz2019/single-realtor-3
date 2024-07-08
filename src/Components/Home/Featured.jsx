@@ -1,8 +1,6 @@
-"use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+// images 
 import bedIcon from "../../../public/Images/Bed.png";
 import bathsIcon from "../../../public/Images/Baths.png";
 import measurementIcon from "../../../public/Images/measurement.png";
@@ -13,10 +11,6 @@ import featuredImage4 from "../../../public/Images/featuredImage-4.png";
 import featuredImage5 from "../../../public/Images/featuredImage-5.png";
 import featuredImage6 from "../../../public/Images/featuredImage-6.png";
 export default function Featured() {
-  useEffect(() => {
-    AOS.init({ duration: 1200 });
-  }, []);
-
   const properties = [
     // Properties data
     {
@@ -94,7 +88,10 @@ export default function Featured() {
   ];
 
   return (
-    <div className="max-w-[1420px] overflow-hidden mx-auto py-32 lg:py-[218px] px-4">
+    <div
+      id="listing"
+      className="max-w-[1420px] overflow-hidden mx-auto py-32 lg:py-[218px] px-4"
+    >
       {/* Header section */}
       <header className="text-center flex flex-col gap-y-3 md:gap-y-6 mb-20">
         <h3
@@ -141,23 +138,23 @@ export default function Featured() {
               </header>
               <div className="p-4 custom-shadow rounded-l-lg">
                 <address className="flex not-italic justify-between">
-                  <p className="text-lg font-normal mb-2 py-2 open-sans-font">
+                  <p className="text-lg md:text-xl font-normal mb-2 py-2 open-sans-font">
                     {property.address}
                   </p>
-                  <p className="text-[#FF0000] font-bold text-lg playfair-display-font">
+                  <p className="text-[#FF0000] font-bold text-lg md:text-xl playfair-display-font">
                     {property.price}
                   </p>
                 </address>
                 <div className="mb-2 flex justify-between border border-x-0 py-2 border-secondary  open-sans-font">
-                  <p className="flex items-center gap-2 text-lg md:text-xl font-normal ">
+                  <p className="flex items-center gap-2 text-lg md:text-2xl  font-normal ">
                     <Image src={bedIcon} alt="bed" height="24" width="24" />
                     {property.beds} Beds
                   </p>
-                  <p className="flex items-center gap-2 text-lg md:text-xl font-normal">
+                  <p className="flex items-center gap-2 text-lg md:text-2xl  font-normal">
                     <Image src={bathsIcon} alt="bath" height="24" width="24" />
                     {property.baths} Baths
                   </p>
-                  <p className="flex items-center gap-2 text-lg md:text-xl font-normal">
+                  <p className="flex items-center gap-2 text-lg md:text-2xl  font-normal">
                     <Image
                       src={measurementIcon}
                       alt="area"
@@ -227,10 +224,10 @@ export default function Featured() {
             Today
           </p>
           <a
-            data-aos-delay="400"
             href="#"
-            className="sm:w-auto rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white shadow hover:bg-blue-900 focus:outline-none focus:ring active:bg-blue-900 hover:shadow-md"
-            data-aos="fade-up"
+            className="sm:w-auto rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white shadow transition-all duration-300 ease-in-out transform  hover:shadow-lg  focus:outline-none focus:ring montserrat-font"
+            data-aos="fade-right"
+            data-aos-duration="1200"
           >
             Browse All
           </a>
@@ -252,19 +249,19 @@ export default function Featured() {
             </div>
             <div className="p-4">
               <address className="flex not-italic justify-between">
-                <p className="text-lg font-normal mb-2 py-2 montserrat-font">
+                <p className="text-lg md:text-2xl font-normal mb-2 py-2 montserrat-font">
                   {property.address}
                 </p>
-                <p className="text-[#FF0000] font-bold text-lg playfair-display-font">
+                <p className="text-[#FF0000] font-bold text-lg md:text-2xl playfair-display-font">
                   {property.price}
                 </p>
               </address>
               <div className="mb-2 flex justify-between border border-x-0 py-2 border-secondary montserrat-font">
-                <p className="flex items-center gap-2 text-lg md:text-xl font-normal">
+                <p className="flex items-center gap-2 text-lg md:text-2xl  font-normal">
                   <Image src={bedIcon} alt="bedIcon" height="24" width="24" />
                   {property.beds} Beds
                 </p>
-                <p className="flex items-center gap-2 text-lg md:text-xl font-normal">
+                <p className="flex items-center gap-2 text-lg md:text-2xl  font-normal">
                   <Image
                     src={bathsIcon}
                     alt="bathsIcon"
@@ -272,8 +269,8 @@ export default function Featured() {
                     width="24"
                   />
                   {property.baths} Baths
-                </p>
-                <p className="flex items-center gap-2 text-lg md:text-xl font-normal">
+                </p>{" "}
+                <p className="flex items-center gap-2 text-lg md:text-2xl  font-normal">
                   <Image
                     src={measurementIcon}
                     alt="measurementIcon"

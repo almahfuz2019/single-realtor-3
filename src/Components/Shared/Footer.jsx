@@ -1,8 +1,6 @@
-"use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+// images
 import { ImFacebook, ImTwitter } from "react-icons/im";
 import { FaInstagram } from "react-icons/fa";
 import footerImage from "../../../public/Images/FooterImage.png";
@@ -11,10 +9,6 @@ import emailIcon from "../../../public/Images/emailIcon.png";
 import callIcon_Footer from "../../../public/Images/CallIcon_Footer.png";
 
 export default function Footer() {
-  useEffect(() => {
-    AOS.init({ duration: 1200 });
-  }, []);
-
   return (
     <footer className="bg-[#C17767] font-montserrat overflow-hidden">
       <div className="max-w-[1420px] py-16 mx-auto px-4">
@@ -45,7 +39,7 @@ export default function Footer() {
                     alt: "Email",
                   },
                   {
-                    src:locationIcon,
+                    src: locationIcon,
                     text: "1234 Broadway, New York, NY 10001",
                     alt: "Address",
                   },
@@ -97,20 +91,35 @@ export default function Footer() {
       <div className="bg-[#861E32] py-4">
         <div className="max-w-[1420px] mx-auto px-4 flex flex-col lg:flex-row items-center lg:justify-between text-secondary">
           {/* Social Media Links */}
-        
-          <ul className="menu menu-horizontal px-1 hidden lg:flex">
+
+          <ul className="menu menu-horizontal px-1 flex">
             <li>
-              <a href="#" className="text-secondary text-xl">
+              <a
+                href="https://www.facebook.com/" // Replace with your actual Facebook profile URL
+                className="text-secondary text-xl hover:scale-110 hover:bg-none"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ImFacebook className="text-white bg-black h-[32px] p-1 rounded w-[32px]" />
               </a>
             </li>
             <li>
-              <a href="#" className="text-secondary text-xl">
+              <a
+                href="https://www.twitter.com/" // Replace with your actual Twitter profile URL
+                className="text-secondary text-xl hover:scale-110 hover:bg-none"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ImTwitter className="text-white bg-black h-[32px] p-1 rounded w-[32px]" />
               </a>
             </li>
             <li>
-              <a href="#" className="text-secondary text-xl">
+              <a
+                href="https://www.instagram.com/" // Replace with your actual Instagram profile URL
+                className="text-secondary text-xl hover:scale-110 hover:bg-none"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram className="text-white bg-black h-[32px] p-1 rounded w-[32px]" />
               </a>
             </li>
@@ -118,12 +127,16 @@ export default function Footer() {
           {/* Footer Text */}
           <div className="text-center lg:text-left">
             <p className="text-base font-weight-400 montserrat-font">
-              Webflow Template by TECHPLATO.Inc
+              Webflow Template by{" "}
+              <a href="http://techplato.com" className="font-medium">
+                TECHPLATO.Inc
+              </a>
             </p>
             <p className="text-base font-weight-400 montserrat-font">
               All Rights Reserved
             </p>
           </div>
+          <p></p>
         </div>
       </div>
     </footer>
