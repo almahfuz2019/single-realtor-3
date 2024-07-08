@@ -29,7 +29,14 @@ module.exports = {
           warning: "#DF7E07",
           error: "#FA5C5C",
         },
-      },
+      }
     ],
+    darkTheme: "mytheme",
+    base: true,
+    styled: true,
+    utils: true,
+    prefix: "",
+    logs: true,
+    themeRoot: ":root",
   },
 };
