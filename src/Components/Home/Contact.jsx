@@ -23,12 +23,12 @@ export default function Contact() {
       {/* Grid Header */}
       <div
         id="contact"
-        className="grid grid-cols-2 justify-center mt-32 lg:mt-[218px] "
+        className="grid grid-cols-2 lg:grid-cols-2 justify-center mt-32 lg:mt-[218px] "
       >
         <div className="text-center bg-primary sm:text-2xl text-xl text-white md:text-3xl lg:text-5xl py-4 font-bold playfair-display-font">
           <p>Property Estimate</p>
         </div>
-        <div className="text-center md:text-3xl  sm:text-2xl text-xl lg:text-5xl bg-secondary text-black  py-4 font-bold playfair-display-font">
+        <div className="text-center md:text-3xl sm:text-2xl text-xl lg:text-5xl bg-secondary text-black py-4 font-bold playfair-display-font">
           Instant Alert
         </div>
       </div>
@@ -55,7 +55,7 @@ export default function Contact() {
               data-aos-delay="400"
               className="sm:text-xl text-sm font-normal open-sans-font"
             >
-              HYour Trusted Real Estate Partner: Offering Expert Guidance,
+              Your Trusted Real Estate Partner: Offering Expert Guidance,
               Personalized Support to Assist You in Every Step of Your Property
               Journey
             </p>
@@ -87,6 +87,7 @@ export default function Contact() {
                     {...register("phone", {
                       required: "Phone is required",
                       pattern: {
+                        value: /^\d{10}$/,
                         message: "Invalid phone number",
                       },
                     })}
@@ -107,7 +108,7 @@ export default function Contact() {
                   })}
                 />
                 <div>
-                  <label className="block text-gray-700 font-normal text-xl md:text-2xl mb-4 mt-3 open-sans-font ">
+                  <label className="block text-gray-700 font-normal text-xl md:text-2xl mb-4 mt-3 open-sans-font">
                     What are you interested in?
                   </label>
                   <div className="flex flex-col space-y-2 montserrat-font">
@@ -161,7 +162,7 @@ export default function Contact() {
               )}
               <button
                 type="submit"
-                className="w-full mt-4 rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white shadow transition-all duration-300 ease-in-out transform  hover:shadow-lg  focus:outline-none focus:ring montserrat-font"
+                className="w-full mt-4 rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white focus:outline-none focus:ring montserrat-font shadow transition duration-300 ease-in-out transform  hover:shadow-2xl hover:bg-gradient-to-r hover:from-[#ea6d53] hover:to-[#b3503c]"
               >
                 Send
               </button>

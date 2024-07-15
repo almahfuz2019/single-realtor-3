@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-// images 
+// images
 import bedIcon from "../../../public/Images/Bed.png";
 import bathsIcon from "../../../public/Images/Baths.png";
 import measurementIcon from "../../../public/Images/measurement.png";
@@ -10,6 +10,7 @@ import featuredImage3 from "../../../public/Images/featuredImage-3.png";
 import featuredImage4 from "../../../public/Images/featuredImage-4.png";
 import featuredImage5 from "../../../public/Images/featuredImage-5.png";
 import featuredImage6 from "../../../public/Images/featuredImage-6.png";
+
 export default function Featured() {
   const properties = [
     // Properties data
@@ -145,16 +146,16 @@ export default function Featured() {
                     {property.price}
                   </p>
                 </address>
-                <div className="mb-2 flex justify-between border border-x-0 py-2 border-secondary  open-sans-font">
-                  <p className="flex items-center gap-2 text-lg md:text-2xl  font-normal ">
+                <div className="mb-2 flex justify-between border border-x-0 py-2 border-secondary open-sans-font">
+                  <p className="flex items-center gap-2 text-lg md:text-2xl font-normal">
                     <Image src={bedIcon} alt="bed" height="24" width="24" />
                     {property.beds} Beds
                   </p>
-                  <p className="flex items-center gap-2 text-lg md:text-2xl  font-normal">
+                  <p className="flex items-center gap-2 text-lg md:text-2xl font-normal">
                     <Image src={bathsIcon} alt="bath" height="24" width="24" />
                     {property.baths} Baths
                   </p>
-                  <p className="flex items-center gap-2 text-lg md:text-2xl  font-normal">
+                  <p className="flex items-center gap-2 text-lg md:text-2xl font-normal">
                     <Image
                       src={measurementIcon}
                       alt="area"
@@ -225,7 +226,7 @@ export default function Featured() {
           </p>
           <a
             href="#"
-            className="sm:w-auto rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white shadow transition-all duration-300 ease-in-out transform  hover:shadow-lg  focus:outline-none focus:ring montserrat-font"
+            className="sm:w-auto rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white focus:outline-none focus:ring montserrat-font shadow transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-r hover:from-[#ea6d53] hover:to-[#b3503c]"
             data-aos="fade-right"
             data-aos-duration="1200"
           >
@@ -235,7 +236,7 @@ export default function Featured() {
         {properties.slice(1, 6).map((property) => (
           <article
             key={property.id}
-            className="border rounded-lg shadow-md hover:shadow-2xl"
+            className="border rounded-lg shadow-md hover:shadow-2xl transition-transform transform hover:scale-105"
             data-aos="fade-up"
           >
             <div className="relative w-full">
@@ -257,11 +258,11 @@ export default function Featured() {
                 </p>
               </address>
               <div className="mb-2 flex justify-between border border-x-0 py-2 border-secondary montserrat-font">
-                <p className="flex items-center gap-2 text-lg md:text-2xl  font-normal">
+                <p className="flex items-center gap-2 text-lg md:text-2xl font-normal">
                   <Image src={bedIcon} alt="bedIcon" height="24" width="24" />
                   {property.beds} Beds
                 </p>
-                <p className="flex items-center gap-2 text-lg md:text-2xl  font-normal">
+                <p className="flex items-center gap-2 text-lg md:text-2xl font-normal">
                   <Image
                     src={bathsIcon}
                     alt="bathsIcon"
@@ -270,7 +271,7 @@ export default function Featured() {
                   />
                   {property.baths} Baths
                 </p>{" "}
-                <p className="flex items-center gap-2 text-lg md:text-2xl  font-normal">
+                <p className="flex items-center gap-2 text-lg md:text-2xl font-normal">
                   <Image
                     src={measurementIcon}
                     alt="measurementIcon"

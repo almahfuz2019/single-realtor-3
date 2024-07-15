@@ -40,7 +40,7 @@ export default function Services() {
 
   return (
     <div id="services" className="bg-[#EAC9A833]">
-      <section className="max-w-[1420px] overflow-hidden mx-auto py-32 lg:py-[218px] px-4">
+      <section className="max-w-[1420px] overflow-hidden mx-auto py-24 lg:py-[128px] px-4">
         {/* Header section */}
         <header className="text-center flex flex-col gap-y-3 md:gap-y-6 mb-20">
           <h3
@@ -70,7 +70,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={service.id}
-              className="flex flex-col justify-center items-center custom-shadow bg-primary py-10 px-2 rounded-lg transition-transform transform hover:scale-110 hover:shadow-2xl"
+              className="flex flex-col justify-center items-center custom-shadow bg-primary py-10 px-2 rounded-lg transition-transform transform hover:scale-105 hover:shadow-xl"
               data-aos="fade-up"
               data-aos-duration="1200" // Duration of the animation for this element
               data-aos-delay={index * 100} // Staggered delay for each item
@@ -81,12 +81,12 @@ export default function Services() {
                 width="72"
                 alt={service.alt}
               />
-              <h3 className="font-semibold text-[32px] text-white mt-5 playfair-display-font">
+              <h3 className="font-semibold text-[24px] sm:text-[28px] md:text-[32px] text-white mt-5 playfair-display-font">
                 {service.title}
               </h3>
               <a
                 href="#"
-                className="text-[24px] font-normal text-white border border-white py-[8px] px-[21px] inline-block mx-auto mt-10 montserrat-font transition-colors hover:bg-white hover:text-primary cursor-not-allowed"
+                className="text-[18px] sm:text-[20px] md:text-[24px] font-normal text-white border border-white py-[8px] px-[21px] inline-block mx-auto mt-10 montserrat-font transition-colors hover:bg-white hover:text-primary cursor-not-allowed"
               >
                 {service.link}
               </a>

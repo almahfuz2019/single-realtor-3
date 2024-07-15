@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
             {/* Contact Information */}
             <section data-aos="fade-right">
-              <h2 className="font-semibold text-3xl sm:text-4xl lg:text-4xl playfair-display-font  mb-6 lg:mb-10">
+              <h2 className="font-semibold text-3xl sm:text-4xl lg:text-4xl playfair-display-font mb-6 lg:mb-10">
                 Robert Pattinson
               </h2>
               <p className="text-xl font-weight-400 text-[#FFFFFFCC]">
@@ -54,7 +54,7 @@ export default function Footer() {
 
             {/* Useful Links */}
             <section data-aos="fade-up">
-              <h2 className="font-semibold text-3xl sm:text-4xl lg:text-4xl playfair-display-font  mb-6 lg:mb-10">
+              <h2 className="font-semibold text-3xl sm:text-4xl lg:text-4xl playfair-display-font mb-6 lg:mb-10">
                 Useful Links
               </h2>
               {["Home", "About Me", "Jobs", "Press Kit"].map((link, index) => (
@@ -71,7 +71,7 @@ export default function Footer() {
 
           {/* Additional Links */}
           <section data-aos="fade-left">
-            <h2 className="font-semibold text-3xl sm:text-4xl lg:text-4xl playfair-display-font  mb-6 lg:mb-10">
+            <h2 className="font-semibold text-3xl sm:text-4xl lg:text-4xl playfair-display-font mb-6 lg:mb-10">
               Just a click could lead to a wonderful World like this -
             </h2>
             <div>
@@ -91,7 +91,6 @@ export default function Footer() {
       <div className="bg-[#861E32] py-4">
         <div className="max-w-[1420px] mx-auto px-4 flex flex-col lg:flex-row items-center lg:justify-between text-secondary">
           {/* Social Media Links */}
-
           <ul className="menu menu-horizontal px-1 flex">
             <li>
               <a
@@ -125,7 +124,7 @@ export default function Footer() {
             </li>
           </ul>
           {/* Footer Text */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left mt-4 lg:mt-0">
             <p className="text-base font-weight-400 montserrat-font">
               Webflow Template by{" "}
               <a href="http://techplato.com" className="font-medium">
@@ -136,7 +135,6 @@ export default function Footer() {
               All Rights Reserved
             </p>
           </div>
-          <p></p>
         </div>
       </div>
     </footer>

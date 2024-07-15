@@ -16,22 +16,22 @@ export default function Hero() {
         <div className="relative mx-auto max-w-[1420px] px-4 h-[64vh] sm:h-[70vh] lg:h-screen flex flex-col items-center justify-center">
           <div className="text-center flex flex-col items-center mt-20 2xl:mt-0">
             <h1
-              className="sm:text-4xl text-3xl md:text-5xl md:leading-[55px] font-bold text-white playfair-display-font"
+              className="text-3xl sm:text-4xl md:text-5xl md:leading-[55px] font-bold text-white playfair-display-font"
               data-aos="fade-up"
             >
               Your 15 Guide To Finding The Perfect Property
             </h1>
             <p
               data-aos="fade-up"
-              className="sm:text-xl text-base font-normal leading-[27.24px] mt-4 text-white open-sans-font"
+              className="text-base sm:text-lg md:text-xl font-normal leading-[27.24px] mt-4 text-white open-sans-font"
             >
               Positions the realtor as a knowledgeable advisor
             </p>
 
-            <div className="mt-10 sm:mt-20 flex gap-3 md:gap-8 justify-center w-full">
+            <div className="mt-10 sm:mt-12 md:mt-16 lg:mt-20 flex gap-3 md:gap-6 lg:gap-8 justify-center w-full">
               <a
                 href="#"
-                className="sm:w-auto rounded-md lg:rounded-xl bg-secondary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-black shadow transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:bg-gradient-to-t hover:from-primary hover:via-primary/10 hover:to-secondary focus:outline-none focus:ring montserrat-font"
+                className="w-auto rounded-md lg:rounded-xl bg-secondary px-4 md:px-8 lg:px-12 py-2 md:py-3 lg:py-4 text-lg md:text-xl lg:text-2xl font-medium text-black shadow transition-transform duration-300 ease-in-out transform    hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-r hover:from-[#f5d9bc] hover:to-[#d4aa7f]  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 montserrat-font"
                 data-aos="fade-right"
                 data-aos-duration="1200"
               >
@@ -40,7 +40,7 @@ export default function Hero() {
 
               <a
                 href="#"
-                className="flex items-center justify-center gap-2 lg:gap-4 sm:w-auto rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white shadow focus:outline-none focus:ring hover:shadow-md montserrat-font"
+                className="flex items-center justify-center gap-2 lg:gap-4 w-auto rounded-md lg:rounded-xl bg-primary px-4 md:px-8 lg:px-12 py-2 md:py-3 lg:py-4 text-lg md:text-xl lg:text-2xl font-medium text-white shadow transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-r hover:from-[#ea6d53] hover:to-[#b3503c] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 montserrat-font"
                 data-aos="fade-left"
               >
                 <Image
@@ -48,7 +48,7 @@ export default function Hero() {
                   height="24"
                   width="24"
                   alt="Call Icon"
-                  className="md:h-auto md:w-auto h-4 w-4 "
+                  className="h-4 w-4 md:h-6 md:w-6 lg:h-8 lg:w-8"
                 />
                 Book A Call
               </a>

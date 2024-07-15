@@ -15,6 +15,17 @@
 .montserrat-font {
   font-family: "Montserrat", sans-serif;
 }
+@font-face {
+  font-family: 'centuryGothic';
+  src: url('../../public/Fonts/Century\ Gothic.ttf') format('ttf');
+  /* Add more src declarations for other formats if necessary */
+  font-weight: normal; /* Specify font-weight if applicable */
+  font-style: normal; /* Specify font-style if applicable */
+}
+.centuryGothic-font{
+  font-family: "centuryGothic",sans-serif !important;
+}
+
 
 body {
   font-family: "Playfair Display", serif;

@@ -43,7 +43,7 @@ export default function About() {
       </header>
 
       {/* Main content */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-14 md:gap-y-24  items-center justify-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-14 md:gap-y-24 items-center justify-center">
         <div data-aos="fade-right">
           <Image
             height="624"
@@ -77,9 +77,8 @@ export default function About() {
           <div data-aos="fade-up">
             <a
               href="#"
-              className="sm:w-auto rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white shadow transition-all duration-300 ease-in-out transform  hover:shadow-lg  focus:outline-none focus:ring montserrat-font"
+              className="sm:w-auto rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white  focus:outline-none focus:ring montserrat-font shadow transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-r hover:from-[#ea6d53] hover:to-[#b3503c]"
               data-aos="fade-right"
-              data-aos-duration="1200"
             >
               Contact Me
             </a>
@@ -88,17 +87,17 @@ export default function About() {
       </div>
 
       {/* Fun facts section */}
-      <div className="bg-secondary grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center py-8 rounded-br-3xl px-4 rounded-tl-3xl rounded-bl-0 rounded-tr-0 mt-20  overflow-hidden">
+      <div className="bg-secondary grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center py-8 rounded-br-3xl px-4 rounded-tl-3xl rounded-bl-0 rounded-tr-0 mt-20 overflow-hidden">
         {data.map((item, index) => (
           <div
             key={item.id}
-            className="text-black text-center "
+            className="text-black text-center"
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-delay={index * 100} // Staggering delay
           >
             <h3
-              className="font-bold text-4xl md:text-5xl mb-3 montserrat-font"
+              className="font-bold text-4xl md:text-5xl mb-3 centuryGothic-font"
               data-aos="zoom-in"
               data-aos-duration="1000"
               data-aos-delay={index * 100 + 200} // Staggering delay for the count

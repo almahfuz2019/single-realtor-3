@@ -14,19 +14,20 @@ export default function HomePage() {
   return (
     <div>
       <Animation />
-      {/* navigation icon  */}
+      {/* Navigation Icon */}
       <a
         href="#home"
-        className="fixed bottom-0 right-0 mb-4 mr-4 z-50 cursor-pointer"
+        className="fixed bottom-0 right-0 mb-4 mr-4 z-50 cursor-pointer group"
       >
         <Image
           height="60"
           width="60"
           src={topArrowIcon}
           alt="Navigation Image"
-          className="h-[50px] w-auto md:h-auto bg-[#861E32] rounded-full p-0.5 transition-all"
+          className="h-12 w-auto md:h-auto bg-[#861E32] rounded-full p-0.5 transition-transform duration-300 ease-in-out transform group-hover:scale-110 "
         />
       </a>
+
       <Hero />
       <About />
       <Services />
