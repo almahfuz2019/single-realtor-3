@@ -23,7 +23,7 @@ export default function Contact() {
       {/* Grid Header */}
       <div
         id="contact"
-        className="grid grid-cols-2 lg:grid-cols-2 justify-center mt-32 lg:mt-[218px] "
+        className="grid grid-cols-2 lg:grid-cols-2 justify-center mt-32 lg:mt-[180px] "
       >
         <div className="text-center bg-primary sm:text-2xl text-xl text-white md:text-3xl lg:text-5xl py-4 font-bold playfair-display-font">
           <p>Property Estimate</p>
@@ -33,7 +33,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <section className="max-w-[1420px] mx-auto py-32 px-4 lg:py-[218px]">
+      <section className="max-w-[1420px] mx-auto py-32 px-4 lg:py-[180px]">
         <div>
           {/* Header section */}
           <header className="text-center flex flex-col gap-y-3 md:gap-y-6 mb-20">

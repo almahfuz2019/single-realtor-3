@@ -91,7 +91,7 @@ export default function Featured() {
   return (
     <div
       id="listing"
-      className="max-w-[1420px] overflow-hidden mx-auto py-32 lg:py-[218px] px-4"
+      className="max-w-[1420px] overflow-hidden mx-auto py-32 lg:py-[180px] px-4"
     >
       {/* Header section */}
       <header className="text-center flex flex-col gap-y-3 md:gap-y-6 mb-20">

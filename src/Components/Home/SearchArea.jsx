@@ -8,7 +8,7 @@ import searchAreaBackground from "../../../public/Images/searchAreaBackground.pn
 const SearchArea = () => {
   return (
     <section
-      className="relative overflow-hidden bg-cover bg-center py-24 lg:py-[128px] mb-16 lg:mb-[218px] flex items-center justify-center px-4"
+      className="relative overflow-hidden bg-cover bg-center py-24 lg:py-[128px] mb-16 lg:mb-[180px] flex items-center justify-center px-4"
       style={{ backgroundImage: `url(${searchAreaBackground.src})` }}
       id="guideline"
     >

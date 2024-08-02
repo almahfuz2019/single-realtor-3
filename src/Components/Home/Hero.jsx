@@ -31,7 +31,7 @@ export default function Hero() {
             <div className="mt-10 sm:mt-12 md:mt-16 lg:mt-20 flex gap-3 md:gap-6 lg:gap-8 justify-center w-full">
               <a
                 href="#"
-                className="w-auto rounded-md lg:rounded-xl bg-secondary px-4 md:px-8 lg:px-12 py-2 md:py-3 lg:py-4 text-lg md:text-xl lg:text-2xl font-medium text-black shadow transition-transform duration-300 ease-in-out transform    hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-r hover:from-[#f5d9bc] hover:to-[#d4aa7f]  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 montserrat-font"
+                className="w-auto rounded-md lg:rounded-xl bg-secondary px-4 md:px-8 lg:px-12 py-2 md:py-3 lg:py-4 text-lg md:text-xl lg:text-2xl font-medium text-black shadow transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-r hover:from-[#f5d9bc] hover:to-[#d4aa7f] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 montserrat-font"
                 data-aos="fade-right"
                 data-aos-duration="1200"
               >
